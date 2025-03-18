@@ -1,0 +1,1255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  FlashTypeID: 0, means Nor Flash;1, means Nand Flash       -->
+<!--  File-Flag: 0, means this file need not  input file path   -->
+<!--             1, means this file need input file path        -->
+<!--  File-CheckFlag: 0, this file is optional                  -->
+<!--                  1, must select this file                  -->
+<!--                  2, means not check this file in pack      -->
+<!--  Mode: 0, not uesed; 1, means nand page size and oob care  -->
+<!--  File-Type: MasterImage,means it will add BOOT_PARAM       -->
+<!--             and OS_INFO information to file                -->
+<!--  File-ID: Can not be changed,it is used by tools           -->
+<!--  File-IDAlias: This is  for GUI display can be changed     -->
+<BMAConfig>
+  <ProductList>
+    <Product name="udx710-module">
+			<SchemeName>udx710-module</SchemeName>
+			<FlashTypeID>1</FlashTypeID>
+			<Mode>0</Mode>
+			<APR>1</APR>
+			<NVBackup backup="1">
+				<NVItem name="License" backup="1">
+					<ID>0x1BF</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="Calibration" backup="1">
+					<ID>0xFFFFFFFF</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Replace" check="0"></NVFlag>
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="IMEI" backup="1">
+					<ID>0xFFFFFFFF</ID>
+					<BackupFlag use="0"></BackupFlag>
+				</NVItem>
+				<NVItem name="TD_Calibration" backup="1">
+					<ID>0xFFFFFFFF</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Replace" check="0"></NVFlag>
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="LTE_CALI_COMMON" backup="1">
+					<ID>0xA05</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Replace" check="0"></NVFlag>
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="LTE_CALIBRATIONPARAM_T1" backup="1">
+					<ID>0x9C4</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="LTE_CALIBRATIONPARAM_T2" backup="1">
+					<ID>0xA04</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="LTE_CALIBRATIONPARAM_T3" backup="1">
+					<ID>0x9C8</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="LTE_CALIBRATIONPARAM_T4" backup="1">
+					<ID>0x9C9</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="LTE_CALIBRATIONPARAM_T5" backup="1">
+					<ID>0x9CA</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="LTE_CALIBRATIONPARAM_T6" backup="1">
+					<ID>0x9CB</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="LTE_CALIBRATIONPARAM_T7" backup="1">
+					<ID>0x9CC</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="LTE_CALIBRATIONPARAM_T8" backup="1">
+					<ID>0x9CD</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="LTE_CALIBRATIONPARAM_T9" backup="1">
+					<ID>0x9CE</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="LTE_CALIBRATIONPARAM_T10" backup="1">
+					<ID>0x9CF</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="LTE_CALIBRATIONPARAM_T11" backup="1">
+					<ID>0x9D0</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="LTE_CALIBRATIONPARAM_T12" backup="1">
+					<ID>0x9D1</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="LTE_CALIBRATIONPARAM_T13" backup="1">
+					<ID>0x9D2</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="LTE_CALIBRATIONPARAM_T14" backup="1">
+					<ID>0x9D3</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="LTE_CALIBRATIONPARAM_T15" backup="1">
+					<ID>0x9D4</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="LTE_CALIBRATIONPARAM_T16" backup="1">
+					<ID>0x9D5</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="LTE_CALIBRATIONPARAM_T17" backup="1">
+					<ID>0x9D6</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="LTE_CALIBRATIONPARAM_T18" backup="1">
+					<ID>0x9D7</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="LTE_CALIBRATIONPARAM_T19" backup="1">
+					<ID>0xA01</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="LTE_CALIBRATIONPARAM_T20" backup="1">
+					<ID>0xA02</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="W_CALI_AGC_PARAMS" backup="1">
+					<ID>0x134</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="W_CALI_APC_PARAMS" backup="1">
+					<ID>0x135</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="W_CALI_INFOR_PARAMS" backup="1">
+					<ID>0x12D</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="GSM_Agc_Cali" backup="1">
+					<ID>0x4</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Replace" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="PMIC_AFC_CALI" backup="1">
+					<ID>0xA28</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="AFC_CALI_CONFIG" backup="1">
+					<ID>0x9C7</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT0_T0" backup="1">
+					<ID>0xED7</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT0_T1" backup="1">
+					<ID>0xED6</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT0_T2" backup="1">
+					<ID>0xED5</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT0_T3" backup="1">
+					<ID>0xED4</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT0_T4" backup="1">
+					<ID>0xED3</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT0_T5" backup="1">
+					<ID>0xED9</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT0_T6" backup="1">
+					<ID>0xEDA</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT0_T7" backup="1">
+					<ID>0xEDB</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT0_T8" backup="1">
+					<ID>0xEDC</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT0_T9" backup="1">
+					<ID>0xEDD</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT0_T10" backup="1">
+					<ID>0xEDE</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT0_T11" backup="1">
+					<ID>0xEDF</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT0_T12" backup="1">
+					<ID>0xEE0</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT0_T13" backup="1">
+					<ID>0xEE1</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT0_T14" backup="1">
+					<ID>0xEE2</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT0_T15" backup="1">
+					<ID>0xE60</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT0_T16" backup="1">
+					<ID>0xE61</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT0_T17" backup="1">
+					<ID>0xE62</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT0_T18" backup="1">
+					<ID>0xE63</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT0_T19" backup="1">
+					<ID>0xE64</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT1_T0" backup="1">
+					<ID>0xE10</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT1_T1" backup="1">
+					<ID>0xE50</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT1_T2" backup="1">
+					<ID>0xE32</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT1_T3" backup="1">
+					<ID>0xE33</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT1_T4" backup="1">
+					<ID>0xE16</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT1_T5" backup="1">
+					<ID>0xE17</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT1_T6" backup="1">
+					<ID>0xE18</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT1_T7" backup="1">
+					<ID>0xE19</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT1_T8" backup="1">
+					<ID>0xE2E</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT1_T9" backup="1">
+					<ID>0xE2F</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT1_T10" backup="1">
+					<ID>0xE26</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT1_T11" backup="1">
+					<ID>0xE27</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT1_T12" backup="1">
+					<ID>0xE28</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT1_T13" backup="1">
+					<ID>0xE1F</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT1_T14" backup="1">
+					<ID>0x12D4</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT1_T15" backup="1">
+					<ID>0xE65</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT1_T16" backup="1">
+					<ID>0xE66</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT1_T17" backup="1">
+					<ID>0xE67</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT1_T18" backup="1">
+					<ID>0xE68</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_TX_ANT1_T19" backup="1">
+					<ID>0xE69</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT0_T0" backup="1">
+					<ID>0xE97</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT0_T1" backup="1">
+					<ID>0xE96</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT0_T2" backup="1">
+					<ID>0xE95</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT0_T3" backup="1">
+					<ID>0xE94</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT0_T4" backup="1">
+					<ID>0xE93</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT0_T5" backup="1">
+					<ID>0xED0</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT0_T6" backup="1">
+					<ID>0xECD</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT0_T7" backup="1">
+					<ID>0xEC9</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT0_T8" backup="1">
+					<ID>0xEC5</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT0_T9" backup="1">
+					<ID>0xEC1</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CalibrationParam_RX_ANT0_T10" backup="1">
+					<ID>0xE70</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CalibrationParam_RX_ANT0_T11" backup="1">
+					<ID>0xE71</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CalibrationParam_RX_ANT0_T12" backup="1">
+					<ID>0xE72</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CalibrationParam_RX_ANT0_T13" backup="1">
+					<ID>0xE73</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CalibrationParam_RX_ANT0_T14" backup="1">
+					<ID>0xE74</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT1_T0" backup="1">
+					<ID>0xE92</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT1_T1" backup="1">
+					<ID>0xE91</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT1_T2" backup="1">
+					<ID>0xE90</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT1_T3" backup="1">
+					<ID>0xE8F</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT1_T4" backup="1">
+					<ID>0xE8E</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT1_T5" backup="1">
+					<ID>0xED1</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT1_T6" backup="1">
+					<ID>0xECC</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT1_T7" backup="1">
+					<ID>0xEC8</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT1_T8" backup="1">
+					<ID>0xEC4</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT1_T9" backup="1">
+					<ID>0xEC0</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CalibrationParam_RX_ANT1_T10" backup="1">
+					<ID>0xE75</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CalibrationParam_RX_ANT1_T11" backup="1">
+					<ID>0xE76</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CalibrationParam_RX_ANT1_T12" backup="1">
+					<ID>0xE77</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CalibrationParam_RX_ANT1_T13" backup="1">
+					<ID>0xE78</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CalibrationParam_RX_ANT1_T14" backup="1">
+					<ID>0xE79</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT2_T0" backup="1">
+					<ID>0xE8D</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT2_T1" backup="1">
+					<ID>0xEA0</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT2_T2" backup="1">
+					<ID>0xE9F</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT2_T3" backup="1">
+					<ID>0xE9E</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT2_T4" backup="1">
+					<ID>0xE9D</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT2_T5" backup="1">
+					<ID>0xECE</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT2_T6" backup="1">
+					<ID>0xECB</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT2_T7" backup="1">
+					<ID>0xEC7</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT2_T8" backup="1">
+					<ID>0xEC3</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT2_T9" backup="1">
+					<ID>0xEBF</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CalibrationParam_RX_ANT2_T10" backup="1">
+					<ID>0xE7A</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CalibrationParam_RX_ANT2_T11" backup="1">
+					<ID>0xE7B</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CalibrationParam_RX_ANT2_T12" backup="1">
+					<ID>0xE7C</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CalibrationParam_RX_ANT2_T13" backup="1">
+					<ID>0xE7D</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CalibrationParam_RX_ANT2_T14" backup="1">
+					<ID>0xE7E</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT3_T0" backup="1">
+					<ID>0xE9C</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT3_T1" backup="1">
+					<ID>0xE9B</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT3_T2" backup="1">
+					<ID>0xE9A</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT3_T3" backup="1">
+					<ID>0xE99</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT3_T4" backup="1">
+					<ID>0xE98</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT3_T5" backup="1">
+					<ID>0xECF</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT3_T6" backup="1">
+					<ID>0xECA</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT3_T7" backup="1">
+					<ID>0xEC6</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT3_T8" backup="1">
+					<ID>0xEC2</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALIBRATIONPARAM_RX_ANT3_T9" backup="1">
+					<ID>0xEBE</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CalibrationParam_RX_ANT3_T10" backup="1">
+					<ID>0xE7F</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CalibrationParam_RX_ANT3_T11" backup="1">
+					<ID>0xE80</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CalibrationParam_RX_ANT3_T12" backup="1">
+					<ID>0xE81</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CalibrationParam_RX_ANT3_T13" backup="1">
+					<ID>0xE82</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CalibrationParam_RX_ANT3_T14" backup="1">
+					<ID>0xE83</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="NR_CALI_COMMON" backup="1">
+					<ID>0xDED</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="0"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="SIMLOCK_SIGN" backup="1">
+					<ID>0x1A3</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="SIMLOCK_PK" backup="1">
+					<ID>0x1A4</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="SIMLOCK_CUSTOMIZE_DATA" backup="1">
+					<ID>0x1F0</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="SIMLOCK_USER_DATA" backup="1">
+					<ID>0x1F1</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="SIMLOCK_NVCONTROL_KEY" backup="1">
+					<ID>0x1F2</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="SIMLOCK_KEY" backup="1">
+					<ID>0x1F4</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="SIMLOCK_CFG" backup="1">
+					<ID>0x7E4</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="SUBSIDY_BLOB" backup="1">
+					<ID>0x91B</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+				<NVItem name="SIMLOCK_CK_PBKDF2" backup="1">
+					<ID>0x1D0</ID>
+					<BackupFlag use="1">
+						<NVFlag name="Continue" check="1"></NVFlag>
+					</BackupFlag>
+				</NVItem>
+			</NVBackup>
+			<Partitions>
+				<!-- size unit is MBytes -->
+				<Partition id="miscdata" size="1"/>
+				<Partition id="misc" size="1"/>
+				<Partition id="nr_fixnv1" size="8"/>
+				<Partition id="nr_fixnv2" size="8"/>
+				<Partition id="prodnv" size="4"/>
+				<Partition id="nr_runtimenv1" size="10"/>
+				<Partition id="nr_runtimenv2" size="10"/>
+				<Partition id="persist" size="2"/>
+				<Partition id="boot" size="14"/>
+				<Partition id="recovery" size="20"/>
+				<Partition id="nr_pmsys" size="1"/>
+				<Partition id="nr_agdsp" size="6"/>
+				<Partition id="nr_modem" size="30"/>
+				<Partition id="nr_v3phy" size="6"/>
+				<Partition id="nr_nrphy" size="6"/>
+				<Partition id="nr_nrdsp1" size="5"/>
+				<Partition id="nr_nrdsp2" size="5"/>
+				<Partition id="nr_deltanv" size="1"/>
+				<Partition id="wcnmodem" size="4"/>
+				<Partition id="system" size="42"/>
+				<Partition id="m_raw" size="2"/>
+				<Partition id="m_data" size="4"/>
+				<Partition id="m_webui" size="10"/>
+				<Partition id="userdata" size="0xFFFFFFFF"/>
+			</Partitions>
+			<ProductComment/>
+		</Product>
+	</ProductList>
+        <SchemeList>
+                <Scheme name="udx710-module">
+			<File>
+				<ID>FDL</ID>
+				<IDAlias>FDL1</IDAlias>
+				<Type>FDL</Type>
+				<Block>
+					<Base>0x28007000</Base>
+					<Size>0x0</Size>
+				</Block>
+				<Flag>1</Flag>
+				<CheckFlag>1</CheckFlag>
+				<Description>First nand flash download image file</Description>
+			</File>
+			<File>
+				<ID>FDL2</ID>
+				<IDAlias>FDL2</IDAlias>
+				<Type>NAND_FDL</Type>
+				<Block>
+					<Base>0x9EFFFE00</Base>
+					<Size>0x0</Size>
+				</Block>
+				<Flag>1</Flag>
+				<CheckFlag>1</CheckFlag>
+				<Description>Second nand flash download image file</Description>
+			</File>
+			<File backup="1">
+				<ID>NV_NR</ID>
+				<IDAlias>NV_NR</IDAlias>
+				<Type>NV_COMM</Type>
+				<Block id="nr_fixnv1">
+					<Base>0x0</Base>
+					<Size>0x800000</Size>
+				</Block>
+				<Flag>1</Flag>
+				<CheckFlag>2</CheckFlag>
+				<Description>nr_fixnv1 image file</Description>
+			</File>
+			<File backup="1">
+				<ID>ProdNV</ID>
+				<IDAlias>ProdNV</IDAlias>
+				<Type>CODE2</Type>
+				<Block id="prodnv">
+					<Base>0x0</Base>
+					<Size>0x41E000</Size>
+				</Block>
+				<Flag>1</Flag>
+				<CheckFlag>2</CheckFlag>
+				<Description>Download prodnv section  operation</Description>
+			</File>
+			<File backup="1">
+				<ID>PhaseCheck</ID>
+				<IDAlias>PhaseCheck</IDAlias>
+				<Type>CODE2</Type>
+				<Block id="miscdata">
+					<Base>0x0</Base>
+					<Size>0x100000</Size>
+				</Block>
+				<Flag>0</Flag>
+				<CheckFlag>2</CheckFlag>
+				<Description>miscdata(phase check) section</Description>
+			</File>
+			<File>
+				<ID>EraseUBOOT</ID>
+				<IDAlias>EraseUBOOT</IDAlias>
+				<Type>EraseFlash2</Type>
+				<Block id="uboot">
+					<Base>0x0</Base>
+					<Size>0x0</Size>
+				</Block>
+				<Flag>0</Flag>
+				<CheckFlag>2</CheckFlag>
+				<Description>Erase UBootloader section</Description>
+			</File>
+			<File>
+				<ID>SPLLoader</ID>
+				<IDAlias>SPL_LOADER</IDAlias>
+				<Type>UBOOT_LOADER2</Type>
+				<Block id="splloader">
+					<Base>0x80000000</Base>
+					<Size>0x0</Size>
+				</Block>
+				<Flag>1</Flag>
+				<CheckFlag>0</CheckFlag>
+				<Description>spl image file</Description>
+			</File>
+			<File>
+				<ID>SML</ID>
+				<IDAlias>SML</IDAlias>
+				<Type>CODE2</Type>
+				<Block id="sml">
+					<Base>0x0</Base>
+					<Size>0x0</Size>
+				</Block>
+				<Flag>1</Flag>
+				<CheckFlag>2</CheckFlag>
+				<Description>Download sml operation</Description>
+			</File>
+			<File>
+				<ID>UBOOTLoader</ID>
+				<IDAlias>UBOOT_LOADER</IDAlias>
+				<Type>UBOOT_LOADER2</Type>
+				<Block id="uboot">
+					<Base>0x0</Base>
+					<Size>0x0</Size>
+				</Block>
+				<Flag>1</Flag>
+				<CheckFlag>0</CheckFlag>
+				<Description>>UBootloader image file</Description>
+			</File>
+
+                        <!-- add by luanshijun -->
+                        <File>
+                                <ID>GPS_GL</ID>
+                                <IDAlias>GPS_GL</IDAlias>
+                                <Type>CODE2</Type>
+                                <Block id="gpsgl">
+                                        <Base>0x0</Base>
+                                        <Size>0x0</Size>
+                                </Block>
+                                <Flag>1</Flag>
+                                <CheckFlag>2</CheckFlag>
+                                <Description>GPS_GL image file</Description>
+                        </File>
+
+                        <File>
+                                <ID>Modem_WCN</ID>
+                                <IDAlias>Modem_WCN</IDAlias>
+                                <Type>CODE2</Type>
+                                <Block id="wcnmodem">
+                                        <Base>0x0</Base>
+                                        <Size>0x0</Size>
+                                </Block>
+                                <Flag>1</Flag>
+                                <CheckFlag>2</CheckFlag>
+                                <Description>Modem_WCN image file</Description>
+                        </File>
+
+                        <!-- add by luanshijun end-->
+			<File>
+				<ID>BOOT</ID>
+				<IDAlias>BOOT</IDAlias>
+				<Type>CODE2</Type>
+				<Block id="boot">
+					<Base>0x0</Base>
+					<Size>0x0</Size>
+				</Block>
+				<Flag>1</Flag>
+				<CheckFlag>0</CheckFlag>
+				<Description>Kernel image file</Description>
+			</File>
+			<File>
+				<ID>Modem_NR_PMSYS</ID>
+				<IDAlias>Modem_NR_PMSYS</IDAlias>
+				<Type>CODE2</Type>
+				<Block id="nr_pmsys">
+					<Base>0x0</Base>
+					<Size>0x0</Size>
+				</Block>
+				<Flag>1</Flag>
+				<CheckFlag>2</CheckFlag>
+				<Description>nr_pmsys image file</Description>
+			</File>
+			<File>
+				<ID>Modem_NR_AGDSP</ID>
+				<IDAlias>MODEM_NR_AGDSP</IDAlias>
+				<Type>CODE2</Type>
+				<Block id="nr_agdsp">
+					<Base>0x0</Base>
+					<Size>0x0</Size>
+				</Block>
+				<Flag>1</Flag>
+				<CheckFlag>2</CheckFlag>
+				<Description>nr_agdsp image file</Description>
+			</File>
+			<File>
+				<ID>FLASH_NR</ID>
+				<IDAlias>EraseRuntimeNV_NR</IDAlias>
+				<Type>EraseFlash2</Type>
+				<Block id="nr_runtimenv1">
+					<Base>0x0</Base>
+					<Size>0x0</Size>
+				</Block>
+				<Flag>0</Flag>
+				<CheckFlag>2</CheckFlag>
+				<Description>Erase nr_runtimenv1 section operation</Description>
+			</File>
+			<File>
+				<ID>Modem_NR</ID>
+				<IDAlias>Modem_NR</IDAlias>
+				<Type>CODE2</Type>
+				<Block id="nr_modem">
+					<Base>0x0</Base>
+					<Size>0x0</Size>
+				</Block>
+				<Flag>1</Flag>
+				<CheckFlag>2</CheckFlag>
+				<Description>nr_modem image file</Description>
+			</File>
+			<File>
+				<ID>Modem_NR_V3PHY</ID>
+				<IDAlias>MODEM_NR_V3PHY</IDAlias>
+				<Type>CODE2</Type>
+				<Block id="nr_v3phy">
+					<Base>0x0</Base>
+					<Size>0x0</Size>
+				</Block>
+				<Flag>1</Flag>
+				<CheckFlag>2</CheckFlag>
+				<Description>nr_v3phy image file</Description>
+			</File>
+			<File>
+				<ID>Modem_NR_PHY</ID>
+				<IDAlias>MODEM_NR_PHY</IDAlias>
+				<Type>CODE2</Type>
+				<Block id="nr_nrphy">
+					<Base>0x0</Base>
+					<Size>0x0</Size>
+				</Block>
+				<Flag>1</Flag>
+				<CheckFlag>2</CheckFlag>
+				<Description>nr_nrphy1 image file</Description>
+			</File>
+			<File>
+				<ID>Modem_NR_DSP1</ID>
+				<IDAlias>MODEM_NR_DSP1</IDAlias>
+				<Type>CODE2</Type>
+				<Block id="nr_nrdsp1">
+					<Base>0x0</Base>
+					<Size>0x0</Size>
+				</Block>
+				<Flag>1</Flag>
+				<CheckFlag>2</CheckFlag>
+				<Description>nr_nrdsp1 image file</Description>
+			</File>
+			<File>
+				<ID>Modem_NR_DSP2</ID>
+				<IDAlias>MODEM_NR_DSP2</IDAlias>
+				<Type>CODE2</Type>
+				<Block id="nr_nrdsp2">
+					<Base>0x0</Base>
+					<Size>0x0</Size>
+				</Block>
+				<Flag>1</Flag>
+				<CheckFlag>2</CheckFlag>
+				<Description>nr_nrdsp2 image file</Description>
+			</File>
+			<File>
+				<ID>Modem_NR_DELTANV</ID>
+				<IDAlias>Modem_NR_DELTANV</IDAlias>
+				<Type>CODE2</Type>
+				<Block id="nr_deltanv">
+					<Base>0x0</Base>
+					<Size>0x0</Size>
+				</Block>
+				<Flag>1</Flag>
+				<CheckFlag>2</CheckFlag>
+				<Description>nr_deltanv image file</Description>
+			</File>
+			<File>
+				<ID>Recovery</ID>
+				<IDAlias>Recovery</IDAlias>
+				<Type>CODE2</Type>
+				<Block id="recovery">
+					<Base>0x0</Base>
+					<Size>0x0</Size>
+				</Block>
+				<Flag>1</Flag>
+				<CheckFlag>0</CheckFlag>
+				<Description>Recovery image file</Description>
+			</File>
+			<File>
+				<ID>System</ID>
+				<IDAlias>System</IDAlias>
+				<Type>YAFFS_IMG2</Type>
+				<Block id="system">
+					<Base>0x0</Base>
+					<Size>0x0</Size>
+				</Block>
+				<Flag>1</Flag>
+				<CheckFlag>0</CheckFlag>
+				<Description>System image file</Description>
+			</File>
+			<File>
+				<ID>m_raw</ID>
+				<IDAlias>m_raw</IDAlias>
+				<Type>YAFFS_IMG2</Type>
+				<Block id="m_raw">
+					<Base>0x0</Base>
+					<Size>0x0</Size>
+				</Block>
+				<Flag>1</Flag>
+				<CheckFlag>0</CheckFlag>
+				<Description>m_raw image file</Description>
+			</File>
+			<File>
+				<ID>m_data</ID>
+				<IDAlias>m_data</IDAlias>
+				<Type>YAFFS_IMG2</Type>
+				<Block id="m_data">
+					<Base>0x0</Base>
+					<Size>0x0</Size>
+				</Block>
+				<Flag>1</Flag>
+				<CheckFlag>0</CheckFlag>
+				<Description>m_data image file</Description>
+			</File>
+			<File>
+				<ID>m_webui</ID>
+				<IDAlias>m_webui</IDAlias>
+				<Type>YAFFS_IMG2</Type>
+				<Block id="m_webui">
+					<Base>0x0</Base>
+					<Size>0x0</Size>
+				</Block>
+				<Flag>1</Flag>
+				<CheckFlag>0</CheckFlag>
+				<Description>m_webui image file</Description>
+			</File>
+                        <File>
+                                <ID>UserData</ID>
+                                <IDAlias>UserData</IDAlias>
+                                <Type>YAFFS_IMG2</Type>
+                                <Block id="userdata">
+                                        <Base>0x0</Base>
+                                        <Size>0x0</Size>
+                                </Block>
+                                <Flag>1</Flag>
+                                <CheckFlag>0</CheckFlag>
+                                <Description>UserData image file</Description>
+                        </File>
+			<File>
+				<ID>EraseMisc</ID>
+				<IDAlias>EraseMisc</IDAlias>
+				<Type>EraseFlash2</Type>
+				<Block id="misc">
+					<Base>0x0</Base>
+					<Size>0x0</Size>
+				</Block>
+				<Flag>0</Flag>
+				<CheckFlag>0</CheckFlag>
+				<Description>Erase misc section operation</Description>
+			</File>
+			<File>
+                <ID>Misc</ID>
+                <IDAlias>Misc</IDAlias>
+				<Type>YAFFS_IMG2</Type>
+                <Block id="misc">
+                    <Base>0x0</Base>
+                    <Size>0x0</Size>
+                </Block>
+                <Flag>1</Flag>
+                <CheckFlag>0</CheckFlag>
+                <Description>Misc file</Description>
+            </File>
+		</Scheme>
+	</SchemeList></BMAConfig>
